@@ -1,0 +1,91 @@
+/* body {
+  font-family: system-ui;
+  background: #f06d06;
+  color: white;
+  text-align: center;
+} */
+body{
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-family:'Nunito Sans', sans-serif;
+  flex-direction: column;
+}
+h1{
+  font-size:48px;
+  color:#5b6d5b;
+}
+h3{
+  color:#ca8a8b;
+}
+.play-cell{
+  display:flex;
+  border-radius:12px;
+  height:100px;
+  width:100px;
+  box-shadow: 10px 10px 21px 1px rgba(0,0,0,0.74);
+-webkit-box-shadow: 10px 10px 21px 1px rgba(0,0,0,0.74);
+-moz-box-shadow: 10px 10px 21px 1px rgba(0,0,0,0.74);
+  justify-content:center;
+  align-items:center;
+  font-size:52px;
+  font-weight:bold;
+}
+.buttons-container{
+  display:grid;
+  grid-template-columns: auto auto auto;
+  column-gap:24px;
+  row-gap:24px;
+}
+.play-cell:hover{
+  background-color:rgba(40,181,181,0.3);
+}
+.x-cell{
+  background-image: linear-gradient(to right bottom, #0c1794, #7a0089, #b20073, #d60057, #eb1238);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
+}
+.o-cell{
+  background-image: linear-gradient(to right bottom, #167b90, #0a78b8, #8162c1, #d23191, #eb1238);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
+}
+.actionContainer{
+  margin-top:30px;
+  margin:20px;
+}
+.action{
+  background-image: linear-gradient(to bottom, #859016, #718e08, #5b8c00, #3f8a00, #0f8703); 
+  color:white;
+  letter-spacing:2px;
+  transition: 2s all;
+  padding:16px;
+  border: none;
+  border-radius: 5px;
+  font-family: inherit;
+  color: white;
+  margin: 0px 16px;
+  font-family: inherit;
+}
+input{
+  padding:8px;
+}
+.scale-animate{
+  animation:scale-animation 0.4s ease-in-out 1s infinite alternate-reverse;
+}
+
+@keyframes scale-animation{
+  from{
+      transform:scale(1.0);
+  }
+  to{
+      transform:scale(1.1)
+  }
+}
